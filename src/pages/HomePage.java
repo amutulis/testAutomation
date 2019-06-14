@@ -5,11 +5,14 @@ import org.openqa.selenium.WebDriver;
 
 
 
+
 public class HomePage {
 	WebDriver driver;
+	
 	By SEARCHBOX = By.id("term");
 	By SEARCHBUTTON = By.id("searchButton");
 
+	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 	}

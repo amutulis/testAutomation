@@ -6,7 +6,8 @@
  
   <test name="Test">
     <classes>
-      <class name="demoTest.testNG"/>      
+      <class name="demoTest.testNG"/>
+      <class name="demoTest.testNG2"/>       
     </classes>
   </test>
 </suite>

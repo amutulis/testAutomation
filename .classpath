@@ -8,55 +8,96 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/cglib-nodep-3.2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-io-2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-lang3-3.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/cssparser-0.9.20.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/guava-19.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/htmlunit-2.23.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/htmlunit-core-js-2.23.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/httpclient-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/httpcore-4.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/httpmime-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jetty-io-9.2.15.v20160210.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jetty-util-9.2.15.v20160210.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/neko-htmlunit-2.23.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/netty-3.5.7.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/phantomjsdriver-1.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/sac-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-api-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-chrome-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-edge-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-firefox-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-ie-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-java-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-opera-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-remote-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-safari-driver-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-support-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/serializer-2.7.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/websocket-api-9.2.15.v20160210.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/websocket-client-9.2.15.v20160210.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/websocket-common-9.2.15.v20160210.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/xalan-2.7.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/xercesImpl-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/cssparser-0.9.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/guava-21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/htmlunit-2.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/htmlunit-core-js-2.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/htmlunit-driver-2.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jetty-io-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jetty-util-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/neko-htmlunit-2.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/phantomjsdriver-1.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-api-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-chrome-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-edge-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-firefox-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-ie-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-java-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-opera-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-remote-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-safari-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/selenium-support-4.0.0-alpha-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/websocket-api-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/websocket-client-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/websocket-common-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/cssparser-0.9.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/htmlunit-2.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/htmlunit-core-js-2.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/jetty-io-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/jetty-util-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/neko-htmlunit-2.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/phantomjsdriver-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-chrome-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-edge-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-firefox-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-ie-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-java-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-opera-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-remote-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-safari-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/selenium-support-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/websocket-api-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/websocket-client-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/websocket-common-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Artis Mutulis/Desktop/jar_files1/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

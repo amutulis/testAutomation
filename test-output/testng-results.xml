@@ -2,17 +2,35 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-14T10:27:06Z" name="Default suite" finished-at="2019-06-14T10:27:16Z" duration-ms="9680">
+  <suite started-at="2019-06-15T09:22:37Z" name="Default suite" finished-at="2019-06-15T09:22:40Z" duration-ms="3478">
     <groups>
     </groups>
-    <test started-at="2019-06-14T10:27:06Z" name="Default test" finished-at="2019-06-14T10:27:16Z" duration-ms="9680">
+    <test started-at="2019-06-15T09:22:37Z" name="Default test" finished-at="2019-06-15T09:22:40Z" duration-ms="3478">
       <class name="demoTest.testNG">
-        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.testNG@49139829]" started-at="2019-06-14T10:27:06Z" name="prepare" finished-at="2019-06-14T10:27:16Z" duration-ms="9614" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.testNG@765d7657]" started-at="2019-06-15T09:22:37Z" name="prepare" finished-at="2019-06-15T09:22:40Z" duration-ms="3399" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities [{browserName=chrome, chromeOptions=org.openqa.selenium.chrome.ChromeOptions@1b550c0, version=, platform=ANY}], required capabilities = Capabilities [{}]
+Build info: version: '3.3.0', revision: 'b526bd5b41', time: '2017-03-07 19:26:04 +0000'
+System info: host: 'ARTISMUTULIS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pages.HomePage.getPageTitle(HomePage.java:44)
-at demoTest.testNG.prepare(testNG.java:46)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{browserName=chrome, chromeOptions=org.openqa.selenium.chrome.ChromeOptions@1b550c0, version=, platform=ANY}], required capabilities = Capabilities [{}]
+Build info: version: '3.3.0', revision: 'b526bd5b41', time: '2017-03-07 19:26:04 +0000'
+System info: host: 'ARTISMUTULIS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:178)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:167)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+at demoTest.testNG.prepare(testNG.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -39,16 +57,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method signature="checkSortedElements()[pri:0, instance:demoTest.testNG@49139829]" started-at="2019-06-14T10:27:16Z" name="checkSortedElements" finished-at="2019-06-14T10:27:16Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="checkSortedElements()[pri:0, instance:demoTest.testNG@765d7657]" started-at="2019-06-15T09:22:40Z" name="checkSortedElements" finished-at="2019-06-15T09:22:40Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities [{browserName=chrome, chromeOptions=org.openqa.selenium.chrome.ChromeOptions@1b550c0, version=, platform=ANY}], required capabilities = Capabilities [{}]
+Build info: version: '3.3.0', revision: 'b526bd5b41', time: '2017-03-07 19:26:04 +0000'
+System info: host: 'ARTISMUTULIS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pages.HomePage.getPageTitle(HomePage.java:44)
-at demoTest.testNG.prepare(testNG.java:46)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{browserName=chrome, chromeOptions=org.openqa.selenium.chrome.ChromeOptions@1b550c0, version=, platform=ANY}], required capabilities = Capabilities [{}]
+Build info: version: '3.3.0', revision: 'b526bd5b41', time: '2017-03-07 19:26:04 +0000'
+System info: host: 'ARTISMUTULIS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:178)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:167)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+at demoTest.testNG.prepare(testNG.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,7 +111,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSortedElements -->

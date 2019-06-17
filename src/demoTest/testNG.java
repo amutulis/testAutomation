@@ -15,10 +15,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 import pages.ResultPage;
 
+
 public class testNG {
+	
+
 	public WebDriver driver;
-	HomePage homeP;
-	ResultPage resultP;
+	
+	
+	String title;
 	String titleExpected = "Euroffice Discount Office Supplies and Office Stationery";
 	String resultTitleExpected = "Search";
 	public String baseUrl = "https://www.euroffice.co.uk/";
@@ -35,26 +39,28 @@ public class testNG {
 
 	@BeforeTest
 	//Open browser and goes to specified webpage
-	public void prepare() {
-		System.setProperty("webdriver.chrome.driver", driverPath);
+	public void prepare() throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.get(baseUrl);
-		homeP = new HomePage(driver);
-		//homeP.openBrowser();
 		
-		String title = homeP.getPageTitle();
-		//Checking if test is on correct page
-		Assert.assertTrue("Title is inccorect",title.equalsIgnoreCase(titleExpected));
-		homeP.search(searchPhrase);
+		
 
 	}
 
 	@Test(priority=0)
 	public void checkSortedElements() throws InterruptedException {
+		HomePage homeP = new HomePage(driver);
+		ResultPage resultP= new ResultPage(driver);
+		Thread.sleep(1000);
+		String title = homeP.getPageTitle();
+		//Checking if test is on correct page
+		Assert.assertTrue("Title is inccorect",title.equalsIgnoreCase(titleExpected));
+		homeP.search(searchPhrase);
 		ArrayList<String> saraksts = new ArrayList<String>();	
-		resultP = new ResultPage(driver);
+		//resultP = new ResultPage(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String resultTitle = resultP.getPageTitle();
 		//Checking if test is on correct page
@@ -86,9 +92,9 @@ public class testNG {
 		//Validates if retrieved list was sorted
 		Assert.assertTrue("Element is not sorted",isSorted(newDouble));
 		//Prints list
-		System.out.println( Arrays.toString(newDouble));
-		//homeP.closeBrowser();
+		System.out.println( Arrays.toString(newDouble));		
 		driver.close();
+	
 	}
 	
 

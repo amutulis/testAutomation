@@ -18,35 +18,44 @@ public class ResultPage {
 	By SORT = By.xpath(".//select[@class='select--small']");
 	By PRODUCTCOUNT = By.xpath(".//span[@class='productList__resultsShowingText']/child::strong");
 	By SEARCHBOX = By.id("term");
+
 	/**
 	 * Returns all prices for found products
+	 * 
 	 * @return
 	 */
 	public List<WebElement> getPriceList() {
 		return driver.findElements(PRICE);
 	}
+
 	/**
 	 * returns serachbox value
-	 * @return 
+	 * 
+	 * @return
 	 */
-	public String getSearchBoxPhrase(){
+	public String getSearchBoxPhrase() {
 		String srcValue = driver.findElement(SEARCHBOX).getAttribute("value");
 		return srcValue;
 	}
+
 	/**
 	 * Returns all pages
+	 * 
 	 * @return
 	 */
 	public List<WebElement> getPages() {
 		return driver.findElements(PAGES);
 	}
+
 	/**
 	 * Returns total product count what is above products
+	 * 
 	 * @return
 	 */
 	public List<WebElement> getTotalProducts() {
 		return driver.findElements(PRODUCTCOUNT);
 	}
+
 	/**
 	 * checks if Next button is enabled and click
 	 */
@@ -58,6 +67,7 @@ public class ResultPage {
 		}
 
 	}
+
 	/**
 	 * Closes pop up if it is displayed
 	 */
@@ -68,8 +78,10 @@ public class ResultPage {
 			popp.click();
 		}
 	}
+
 	/**
 	 * Selects value from SOrt drop down
+	 * 
 	 * @param value
 	 */
 	public void selectSortValue(String value) {
@@ -78,15 +90,16 @@ public class ResultPage {
 	}
 
 	public ResultPage(WebDriver driver) {
-		this.driver = driver;
+		this.driver=driver;
 	}
+
 	/**
 	 * Get page title
+	 * 
 	 * @return
 	 */
 	public String getPageTitle() {
 		return driver.getTitle();
 	}
 
-	
 }

@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ResultPage;
 
-public class testNG2 {
+public class CheckLenght {
 
 	public WebDriver driver;
 	HomePage homeP;

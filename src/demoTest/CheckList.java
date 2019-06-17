@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import pages.HomePage;
 import pages.ResultPage;
 
-public class testNG {
+public class CheckList {
 
 	public WebDriver driver;
 

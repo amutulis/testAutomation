@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-17T16:13:41Z" name="Default suite" finished-at="2019-06-17T16:14:04Z" duration-ms="22570">
+  <suite started-at="2019-06-17T16:39:08Z" name="Suite1" finished-at="2019-06-17T16:39:45Z" duration-ms="36707">
     <groups>
     </groups>
-    <test started-at="2019-06-17T16:13:41Z" name="Default test" finished-at="2019-06-17T16:14:04Z" duration-ms="22570">
+    <test started-at="2019-06-17T16:39:08Z" name="Test" finished-at="2019-06-17T16:39:30Z" duration-ms="22238">
       <class name="demoTest.testNG">
-        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.testNG@2f9f7dcf]" started-at="2019-06-17T16:13:41Z" name="prepare" finished-at="2019-06-17T16:13:50Z" duration-ms="9069" status="PASS">
+        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.testNG@131774fe]" started-at="2019-06-17T16:39:08Z" name="prepare" finished-at="2019-06-17T16:39:16Z" duration-ms="8380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method signature="checkSortedElements()[pri:0, instance:demoTest.testNG@2f9f7dcf]" started-at="2019-06-17T16:13:50Z" name="checkSortedElements" finished-at="2019-06-17T16:14:04Z" duration-ms="13456" status="PASS">
+        <test-method signature="checkSortedElements()[pri:0, instance:demoTest.testNG@131774fe]" started-at="2019-06-17T16:39:16Z" name="checkSortedElements" finished-at="2019-06-17T16:39:30Z" duration-ms="13805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSortedElements -->
       </class> <!-- demoTest.testNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+    <test started-at="2019-06-17T16:39:30Z" name="Test2" finished-at="2019-06-17T16:39:45Z" duration-ms="14405">
+      <class name="demoTest.testNG2">
+        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.testNG2@4c371370]" started-at="2019-06-17T16:39:30Z" name="prepare" finished-at="2019-06-17T16:39:37Z" duration-ms="6392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepare -->
+        <test-method signature="checkSearchMaxLenght()[pri:1, instance:demoTest.testNG2@4c371370]" started-at="2019-06-17T16:39:37Z" name="checkSearchMaxLenght" finished-at="2019-06-17T16:39:45Z" duration-ms="8008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSearchMaxLenght -->
+      </class> <!-- demoTest.testNG2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

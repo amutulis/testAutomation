@@ -1,20 +1,12 @@
 package demoTest;
 
-import static org.testng.Assert.assertTrue;
 
-
-import java.util.concurrent.TimeUnit;
-
+import org.testng.annotations.*;
 import org.junit.Assert;
-
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.testng.annotations.AfterTest;
 //import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ResultPage;
 
@@ -64,8 +56,9 @@ public class CheckLenght {
 		// Checking if test is on correct page
 		Assert.assertTrue("Title is inccorect", resultTitle.equalsIgnoreCase(resultTitleExpected));
 		phrase = resultP.getSearchBoxPhrase();
+		boolean phraseLenght = phrase.length() == 200;
 		// Validates if phrase is shortened
-		assertTrue((phrase.length() == 200), "Phrase is longer than 200 symbols");
+		Assert.assertTrue("Phrase is longer than 200 symbols", phraseLenght);
 		Thread.sleep(500);
 		
 		

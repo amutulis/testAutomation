@@ -16,7 +16,7 @@
 	</test>
 	<test name="Test3">
 		<classes>
-			<class name="demoTest.CheckFilter" />
+			<class name="demoTest.CheckTotalProducts" />
 		</classes>
 	</test>
 </suite>

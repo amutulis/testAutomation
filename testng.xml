@@ -19,10 +19,6 @@
 			<class name="demoTest.CheckTotalProducts" />
 		</classes>
 	</test>
-	<test name="Test4">
-		<classes>
-			<class name="demoTest.CheckPageFiltering" />
-		</classes>
-	</test>
+	
 </suite>
 

@@ -46,7 +46,7 @@ public class CheckTotalProducts {
 	}
 
 	@Test(timeOut = 100000)
-	public void checkFilteredElements() throws InterruptedException {
+	public void checkTotalProducts() throws InterruptedException {
 		HomePage homeP = new HomePage(driver);
 		ResultPage resultP = new ResultPage(driver);
 		List<WebElement> totalProducts;

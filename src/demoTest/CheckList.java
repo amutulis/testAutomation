@@ -79,16 +79,25 @@ public class CheckList {
 		Thread.sleep(1500);
 		priceList = resultP.getPriceList();
 		pages = resultP.getPages();
-		// Go trough all pages and retrive prices for searched elements
-		for (int j = 0; j < pages.size(); j++) {
+		boolean multiplePages = pages.size()>1;
+		if (multiplePages) {
+			// Go trough all pages and retrive prices for searched elements
+			for (int j = 0; j < pages.size(); j++) {
+				for (int i = 0; i < priceList.size(); i++) {
+					js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+					saraksts.add(priceList.get(i).getAttribute("textContent"));
+				}
+				resultP.closePopup();
+				Thread.sleep(500);
+				resultP.clickNext();
+				priceList = resultP.getPriceList();
+			} 
+		}else {
+			priceList = resultP.getPriceList();
 			for (int i = 0; i < priceList.size(); i++) {
 				js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 				saraksts.add(priceList.get(i).getAttribute("textContent"));
 			}
-			resultP.closePopup();
-			Thread.sleep(500);
-			resultP.clickNext();
-			priceList = resultP.getPriceList();
 		}
 		// Converts String ArrayList to double Array
 		double[] newDouble = new double[saraksts.size()];

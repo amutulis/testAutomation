@@ -43,8 +43,7 @@ public class CheckLenght {
 	
 	
 		@Test(priority = 0)
-	// Test case that test if phrase was shortened to 200 symbols, because of max
-	// length.
+	// Test case that test if phrase was shortened to 200 symbols, because of maxlength.
 	public void checkSearchMaxLenght() throws InterruptedException {
 		homeP = new HomePage(driver);
 		String title = homeP.getPageTitle();

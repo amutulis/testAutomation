@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demoTest.CheckFilter">
+      <class name="demoTest.CheckTotalProducts">
         <methods>
           <include name="checkFilteredElements"/>
           <include name="prepare"/>
         </methods>
-      </class> <!-- demoTest.CheckFilter -->
+      </class> <!-- demoTest.CheckTotalProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

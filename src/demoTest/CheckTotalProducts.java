@@ -98,7 +98,8 @@ public class CheckTotalProducts {
 
 			int lastElement = totalP.get(totalP.size() - 1);
 			int totalElements = totalC.size();
-			Assert.assertTrue("Product count incorrect", lastElement==totalElements);
+			boolean countEquals = lastElement==totalElements;
+			Assert.assertTrue("Product count incorrect", countEquals);
 			
 			driver.close();
 

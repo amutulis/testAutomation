@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-18T15:41:33Z" name="Suite1" finished-at="2019-06-18T15:42:25Z" duration-ms="52860">
+  <suite started-at="2019-06-18T17:46:00Z" name="Suite1" finished-at="2019-06-18T17:46:53Z" duration-ms="52541">
     <groups>
     </groups>
-    <test started-at="2019-06-18T15:41:33Z" name="Test" finished-at="2019-06-18T15:41:55Z" duration-ms="22348">
+    <test started-at="2019-06-18T17:46:00Z" name="Test" finished-at="2019-06-18T17:46:22Z" duration-ms="21541">
       <class name="demoTest.CheckList">
-        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.CheckList@77847718]" started-at="2019-06-18T15:41:33Z" name="prepare" finished-at="2019-06-18T15:41:41Z" duration-ms="8784" status="PASS">
+        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.CheckList@77847718]" started-at="2019-06-18T17:46:00Z" name="prepare" finished-at="2019-06-18T17:46:09Z" duration-ms="8553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method signature="checkSortedElements()[pri:0, instance:demoTest.CheckList@77847718]" started-at="2019-06-18T15:41:41Z" name="checkSortedElements" finished-at="2019-06-18T15:41:53Z" duration-ms="11807" status="PASS">
+        <test-method signature="checkSortedElements()[pri:0, instance:demoTest.CheckList@77847718]" started-at="2019-06-18T17:46:09Z" name="checkSortedElements" finished-at="2019-06-18T17:46:20Z" duration-ms="11823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSortedElements -->
-        <test-method is-config="true" signature="done()[pri:0, instance:demoTest.CheckList@77847718]" started-at="2019-06-18T15:41:53Z" name="done" finished-at="2019-06-18T15:41:55Z" duration-ms="1692" status="PASS">
+        <test-method is-config="true" signature="done()[pri:0, instance:demoTest.CheckList@77847718]" started-at="2019-06-18T17:46:20Z" name="done" finished-at="2019-06-18T17:46:22Z" duration-ms="1111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
       </class> <!-- demoTest.CheckList -->
     </test> <!-- Test -->
-    <test started-at="2019-06-18T15:41:55Z" name="Test2" finished-at="2019-06-18T15:42:11Z" duration-ms="16063">
+    <test started-at="2019-06-18T17:46:22Z" name="Test2" finished-at="2019-06-18T17:46:38Z" duration-ms="16319">
       <class name="demoTest.CheckLenght">
-        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.CheckLenght@3023df74]" started-at="2019-06-18T15:41:55Z" name="prepare" finished-at="2019-06-18T15:42:02Z" duration-ms="6851" status="PASS">
+        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.CheckLenght@3023df74]" started-at="2019-06-18T17:46:22Z" name="prepare" finished-at="2019-06-18T17:46:29Z" duration-ms="7516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method signature="checkSearchMaxLenght()[pri:0, instance:demoTest.CheckLenght@3023df74]" started-at="2019-06-18T15:42:02Z" name="checkSearchMaxLenght" finished-at="2019-06-18T15:42:09Z" duration-ms="6803" status="PASS">
+        <test-method signature="checkSearchMaxLenght()[pri:0, instance:demoTest.CheckLenght@3023df74]" started-at="2019-06-18T17:46:29Z" name="checkSearchMaxLenght" finished-at="2019-06-18T17:46:36Z" duration-ms="6689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSearchMaxLenght -->
-        <test-method is-config="true" signature="done()[pri:0, instance:demoTest.CheckLenght@3023df74]" started-at="2019-06-18T15:42:09Z" name="done" finished-at="2019-06-18T15:42:11Z" duration-ms="2401" status="PASS">
+        <test-method is-config="true" signature="done()[pri:0, instance:demoTest.CheckLenght@3023df74]" started-at="2019-06-18T17:46:36Z" name="done" finished-at="2019-06-18T17:46:38Z" duration-ms="2084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
       </class> <!-- demoTest.CheckLenght -->
     </test> <!-- Test2 -->
-    <test started-at="2019-06-18T15:42:11Z" name="Test3" finished-at="2019-06-18T15:42:25Z" duration-ms="14339">
+    <test started-at="2019-06-18T17:46:38Z" name="Test3" finished-at="2019-06-18T17:46:53Z" duration-ms="14565">
       <class name="demoTest.CheckTotalProducts">
-        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.CheckTotalProducts@5c6648b0]" started-at="2019-06-18T15:42:11Z" name="prepare" finished-at="2019-06-18T15:42:18Z" duration-ms="6872" status="PASS">
+        <test-method is-config="true" signature="prepare()[pri:0, instance:demoTest.CheckTotalProducts@5c6648b0]" started-at="2019-06-18T17:46:38Z" name="prepare" finished-at="2019-06-18T17:46:45Z" duration-ms="7184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method signature="checkTotalProducts()[pri:0, instance:demoTest.CheckTotalProducts@5c6648b0]" started-at="2019-06-18T15:42:18Z" name="checkTotalProducts" finished-at="2019-06-18T15:42:25Z" duration-ms="7445" status="PASS">
+        <test-method signature="checkTotalProducts()[pri:0, instance:demoTest.CheckTotalProducts@5c6648b0]" started-at="2019-06-18T17:46:45Z" name="checkTotalProducts" finished-at="2019-06-18T17:46:53Z" duration-ms="7368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTotalProducts -->

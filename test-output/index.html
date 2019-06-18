@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite1" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="demoTest.testNG2" class="method navigator-link" hash-for-method="checkSearchMaxLenght">checkSearchMaxLenght</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite1" title="demoTest.CheckFilter" class="method navigator-link" hash-for-method="checkFilteredElements">checkFilteredElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="demoTest.testNG" class="method navigator-link" hash-for-method="checkSortedElements">checkSortedElements</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite1" title="demoTest.CheckLenght" class="method navigator-link" hash-for-method="checkSearchMaxLenght">checkSearchMaxLenght</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="demoTest.CheckList" class="method navigator-link" hash-for-method="checkSortedElements">checkSortedElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -125,7 +130,22 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">demoTest.testNG2</span>
+              <span class="class-name">demoTest.CheckFilter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFilteredElements">
+                  </a> <!-- checkFilteredElements -->
+                  <span class="method-name">checkFilteredElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demoTest.CheckLenght</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -140,7 +160,7 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">demoTest.testNG</span>
+              <span class="class-name">demoTest.CheckList</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -161,17 +181,22 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;demoTest.testNG&quot;/&gt;
+      &lt;class name=&quot;demoTest.CheckList&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Test2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;demoTest.testNG2&quot;/&gt;
+      &lt;class name=&quot;demoTest.CheckLenght&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demoTest.CheckFilter&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,6 +212,9 @@
               </li>
               <li>
                 <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,20 +240,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkSortedElements')
-data.setCell(0, 2, 'demoTest.testNG')
-data.setCell(0, 3, 13805);
+data.setCell(0, 2, 'demoTest.CheckList')
+data.setCell(0, 3, 12397);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkSearchMaxLenght')
-data.setCell(1, 2, 'demoTest.testNG2')
-data.setCell(1, 3, 8008);
+data.setCell(1, 1, 'checkFilteredElements')
+data.setCell(1, 2, 'demoTest.CheckFilter')
+data.setCell(1, 3, 7329);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkSearchMaxLenght')
+data.setCell(2, 2, 'demoTest.CheckLenght')
+data.setCell(2, 3, 6314);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -251,25 +283,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">demoTest.testNG</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">demoTest.CheckList</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">prepare</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkSortedElements</span>
-                <span class="method-start">8412 ms</span>
+                <span class="method-start">8739 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">done</span>
+                <span class="method-start">21148 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">demoTest.testNG2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">demoTest.CheckLenght</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">prepare</span>
-                <span class="method-start">22286 ms</span>
+                <span class="method-start">22524 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkSearchMaxLenght</span>
-                <span class="method-start">28679 ms</span>
+                <span class="method-start">28887 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">done</span>
+                <span class="method-start">35203 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demoTest.CheckFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">prepare</span>
+                <span class="method-start">35453 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">checkFilteredElements</span>
+                <span class="method-start">41719 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

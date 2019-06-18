@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite1">
+<suite name="Suite1" parallel="classes" thread-count="2">
 
 
 	<test name="Test">
@@ -12,6 +12,11 @@
 	<test name="Test2">
 		<classes>
 			<class name="demoTest.CheckLenght" />
+		</classes>
+	</test>
+	<test name="Test3">
+		<classes>
+			<class name="demoTest.CheckFilter" />
 		</classes>
 	</test>
 </suite>

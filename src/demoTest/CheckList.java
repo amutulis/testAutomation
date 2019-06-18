@@ -51,6 +51,11 @@ public class CheckList {
 		driver.get(baseUrl);
 
 	}
+	@AfterTest
+	public void done() {
+		driver.close();
+	}
+	
 
 	@Test(priority = 0)
 	public void checkSortedElements() throws InterruptedException {
@@ -95,7 +100,7 @@ public class CheckList {
 		Assert.assertTrue("Element is not sorted", isSorted(newDouble));
 		// Prints list
 		System.out.println(Arrays.toString(newDouble));
-		driver.close();
+	
 
 	}
 

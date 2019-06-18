@@ -2,12 +2,18 @@ package demoTest;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -20,13 +26,13 @@ public class CheckLenght {
 	HomePage homeP;
 	ResultPage resultP;
 	String phrase;
-	String titleExpected = "Euroffice Discount Office Supplies and Office Stationery";
-	String resultTitleExpected = "Search";
+	public String titleExpected = "Euroffice Discount Office Supplies and Office Stationery";
+	public String resultTitleExpected = "Search";
 	public String baseUrl = "https://www.euroffice.co.uk/";
 	String driverPath = "C:\\Users\\Artis Mutulis\\Desktop\\chromedriver_win32\\chromedriver.exe";
 	// String driverPath = "C:\\Users\\Artis Mutulis\\Desktop\\geckodriver.exe";
 	String searchPhrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
+	
 	@BeforeTest
 	public void prepare() {
 		System.setProperty("webdriver.chrome.driver", driverPath);
@@ -40,8 +46,13 @@ public class CheckLenght {
 		driver.get(baseUrl);
 
 	}
-
-	@Test(priority = 1)
+	@AfterTest
+	public void done() {
+		driver.close();
+	}
+	
+	
+		@Test(priority = 0)
 	// Test case that test if phrase was shortened to 200 symbols, because of max
 	// length.
 	public void checkSearchMaxLenght() throws InterruptedException {
@@ -58,6 +69,7 @@ public class CheckLenght {
 		// Validates if phrase is shortened
 		assertTrue((phrase.length() == 200), "Phrase is longer than 200 symbols");
 		Thread.sleep(500);
-		driver.close();
+		
+		
 	}
 }
